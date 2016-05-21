@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/rootView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/nextTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No questions left.  You can add more from the action bar."
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/flash_button"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:paddingTop="15dp">
+
+    <EditText
+        android:id="@+id/kanji"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="kanji"
+        android:textColor="#fff"
+        android:textColorHint="#999"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:textSize="@dimen/text_small"/>
+
+    <EditText
+        android:id="@+id/kana"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="kana"
+        android:textColor="#fff"
+        android:textColorHint="#999"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/kanji"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/text_small"/>
+
+    <EditText
+        android:id="@+id/eigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="eigo"
+        android:textColor="#fff"
+        android:textColorHint="#999"
+        android:layout_marginLeft="0dp"
+        android:layout_below="@+id/kana"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/text_small"/>
+
+    <com.vessp.flash.support.TextAlertButton
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="N"
+        android:gravity="center"
+        android:background="@drawable/flash_button"
+        android:textColor="@color/normal_white"
+        android:layout_alignBottom="@+id/done"
+        android:layout_toLeftOf="@+id/done"
+        android:minWidth="0dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        />
+
+    <Button
+        android:id="@+id/done"
+        android:background="@drawable/flash_button"
+        android:textColor="@color/normal_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Done"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/text_small"/>
+
+    <Button
+        android:id="@+id/erase"
+        android:background="@drawable/flash_button_small"
+        android:textColor="@color/normal_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/kanji"
+        android:layout_alignTop="@id/kanji"
+        android:text="X"
+        android:minWidth="0dp"
+        android:minHeight="0dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:textSize="@dimen/text_small"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/eigo">
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/gTypeListView"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/normal_blue"
+            android:padding="10dp"
+            />
+
+        <ListView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:id="@+id/gSubTypeListView"
+            android:choiceMode="singleChoice"
+            android:listSelector="@color/normal_blue"
+            android:padding="10dp"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="maru_green">#030</color>
+    <color name="batsu_red">#300</color>
+
+    <color name="normal_black">#000</color>
+    <color name="normal_white">#fff</color>
+    <color name="normal_red">#f55</color>
+    <color name="normal_green">#5f5</color>
+    <color name="normal_blue">#55f</color>
+    <color name="dBlue">#33a</color>
+    <color name="grey05">#333</color>
+
+    <color name="grammer_base">#55f</color>
+    <color name="grammer_noun">#f55</color>
+    <color name="grammer_verb">#5f5</color>
+    <color name="grammer_adj">#f5f</color>
+    <color name="grammer_adv">#ff5</color>
+
+</resources>

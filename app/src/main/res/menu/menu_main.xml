@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+    <item android:id="@+id/action_jisho"
+          android:title="jisho"
+          android:icon="@drawable/ic_list_white_36dp"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/action_add"
+          android:title="add"
+          android:icon="@drawable/ic_add_box_white_36dp"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/action_edit"
+          android:title="edit"
+          android:icon="@drawable/ic_create_white_36dp"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+
+    <item android:id="@+id/action_db"
+          android:title="share"
+          android:icon="@drawable/ic_perm_data_setting_black_36dp"
+          android:orderInCategory="100"
+          app:showAsAction="always"/>
+
+      <item android:id="@+id/action_share"
+            android:title="share"
+            android:icon="@drawable/ic_share_white_36dp"
+            android:orderInCategory="100"
+            app:showAsAction="always"/>
+
+    <!--<item android:id="@+id/action_settings"-->
+          <!--android:title="@string/action_settings"-->
+          <!--android:orderInCategory="100"-->
+          <!--app:showAsAction="never"/>-->
+</menu>
